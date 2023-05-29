@@ -11,6 +11,7 @@ body, html {
 .topmost-container {
     padding: 0 25rem;
     background-color: #1F2937;
+    min-height: 25rem;
 }
 
 #nav-bar {
@@ -49,6 +50,9 @@ body, html {
 
 .signup-content-and-image-container > img {
     object-fit: fill;
+    height: auto;
+    max-width: 450px;  /*TODO: change this and below to rem*/
+    max-height: 300px;
 }
 
 .signup-content-and-image-container > * {
@@ -59,6 +63,7 @@ body, html {
 .signup-content-container {
     overflow-wrap: break-word;
     padding-right: 5rem;
+    max-width: 200px;
 }
 
 .signup-content-container > * {
@@ -70,6 +75,7 @@ body, html {
     font-weight: bolder;
     word-break: break-word;
     padding-right: 3rem;
+    margin-bottom: 0;
 }
 
 .signup-content-container > button {
@@ -80,4 +86,89 @@ body, html {
     font-weight: bold;
     cursor: pointer;
     margin: 1rem 0;
+}
+
+.second-container {
+    /* background-color: #3882F6; */
+    min-height: 25rem;
+}
+
+.second-container > h2 {
+    text-align: center;
+    font: 32px #1F2937 bolder 
+}
+
+.images-and-descriptions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    /* background-color: aqua;  TODO: remove */
+}
+
+.image-and-description {
+    /* border: 1px red dotted; */
+    min-width: 220px;  /*TODO: change this and below to rem*/
+    min-height: 260px;
+    max-width: 220px;
+    max-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* gap: 1rem; */
+    /* margin: 2rem; */
+}
+
+.image-and-description > img {
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    border: 2px #3882F6 solid;
+}
+
+.third-container {
+    background-color: #E5E7EB;
+    min-height: 25rem;
+    padding: 0 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container > * {
+    color: #1f2937;
+}
+
+.quote-container > p {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    /* font: 36px italic light; */
+    min-height: inherit;
+    min-width: inherit;
+    /* margin-block: 0;
+    margin-inline: 0; */
+}
+
+.quote-container > cite {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    /* font: 24px bolder; */
+    align-self: flex-end;
+    padding-right: 2rem;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: inherit; */
+    /* gap: 0; */
 }
