@@ -95,7 +95,9 @@ body, html {
 
 .second-container > h2 {
     text-align: center;
-    font: 32px #1F2937 bolder 
+    font-weight: bolder;
+    font-size: 32px;
+    color: #1F2937;
 }
 
 .images-and-descriptions-container {
@@ -108,7 +110,6 @@ body, html {
 }
 
 .image-and-description {
-    /* border: 1px red dotted; */
     min-width: 220px;  /*TODO: change this and below to rem*/
     min-height: 260px;
     max-width: 220px;
@@ -118,8 +119,6 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* gap: 1rem; */
-    /* margin: 2rem; */
 }
 
 .image-and-description > img {
@@ -133,7 +132,6 @@ body, html {
 .third-container {
     background-color: #E5E7EB;
     min-height: 25rem;
-    padding: 0 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,18 +146,15 @@ body, html {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
-    /* font: 36px italic light; */
     min-height: inherit;
     min-width: inherit;
-    /* margin-block: 0;
-    margin-inline: 0; */
+    max-width: 40rem;
 }
 
 .quote-container > cite {
     text-align: right;
     font-size: 24px;
     font-weight: bold;
-    /* font: 24px bolder; */
     align-self: flex-end;
     padding-right: 2rem;
 }
@@ -169,6 +164,4 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: inherit; */
-    /* gap: 0; */
 }
